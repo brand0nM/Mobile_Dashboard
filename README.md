@@ -1,2 +1,3 @@
 # Mobile_Dashboard
-An Android application for ???
+An Android application for Dashboarding
+
