@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="12dp"
+    android:padding="9dp">
+
+    <!-- Options List With multiple Choices -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionList">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Option 1"
+            android:id="@+id/option1"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/option1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="50dp"
+            android:text="Option 2"
+            android:id="@+id/option2"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/option2"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="50dp"
+            android:text="Option 3"
+            android:id="@+id/option3"
+            />
+    </RelativeLayout>
+    <!-- For Radio Buttons -->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionList"
+        android:layout_marginVertical="22dp"
+        android:id="@+id/radioList"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:text="Option A"
+            android:checked="true"
+            android:id="@+id/radioOption1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_toRightOf="@id/radioOption1"
+            android:text="Option B"
+            android:id="@+id/radioOption2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_toRightOf="@id/radioOption2"
+            android:text="Option C"
+            android:id="@+id/radioOption3"/>
+    </RadioGroup>
+    <!-- Loading -->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/loading"/>
+</RelativeLayout>
